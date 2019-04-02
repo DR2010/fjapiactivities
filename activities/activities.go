@@ -84,9 +84,6 @@ func Find(objectFind string) (activities.Activity, string) {
 		return objectnull, "404 Not found"
 	}
 
-	fmt.Println("result[0]")
-	fmt.Println(result[0])
-
 	return result[0], "200 OK"
 }
 

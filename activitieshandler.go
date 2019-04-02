@@ -17,10 +17,10 @@ func Hfind(httpwriter http.ResponseWriter, httprequest *http.Request) {
 
 	objectfound := models.Activity{}
 
-	objecttofind := httprequest.FormValue("activityname") // This is the key, must be unique
+	objecttofind := httprequest.FormValue("name") // This is the key, must be unique
 
 	params := httprequest.URL.Query()
-	parmactivityname := params.Get("activityname")
+	parmactivityname := params.Get("name")
 
 	fmt.Println("params.Get parmactivityname")
 	fmt.Println(parmactivityname)
